@@ -1,3 +1,3 @@
 # macCocktail
 
-Gathers digital forensic artifacts from macOS file systems.
+Gathers forensic artifacts from macOS file systems.
