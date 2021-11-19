@@ -7,10 +7,10 @@ import traceback
 
 from scripts.artifacts.systemDetails import get_systemDetails
 from scripts.artifacts.timeZone import get_timeZone
+from scripts.artifacts.userAccounts import get_userAccounts
 # from scripts.artifacts.networkInterfaces import get_networkInterfaces
 # from scripts.artifacts.networkHistory import get_networkHistory
 # from scripts.artifacts.networkConfiguration import get_networkConfiguration
-# from scripts.artifacts.userAccounts import get_userAccounts
 # from scripts.artifacts.userAccountsDeleted import get_userAccountsDeleted
 # from scripts.artifacts.internetAccounts import get_internetAccounts
 # from scripts.artifacts.internetAccountsConfiguration import get_internetAccountsConfiguration
@@ -52,7 +52,8 @@ from scripts.macCocktail_functions import *
 #                '/Library/Preferences/SystemConfiguration/preferences.plist', \
 #                '/Library/Preferences/com.apple.loginwindow.plist']),
 tosearch = {'systemDetails':('System Overview'),
-            'timeZone':('System Overview')
+            'timeZone':('System Overview'),
+            'userAccounts':('Accounts')
             }
 #             'userAccounts':('2 - Accounts', ['/private/var/db/dslocal/nodes/Default/users/']),
 #             'userAccountsDeleted':('2 - Accounts', ['/Library/Preferences/com.apple.preferences.accounts.plist']),

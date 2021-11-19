@@ -80,5 +80,7 @@ def get_timeZone(macos_version, report_folder, input_path):
 #write TSV report items 
     tsvname = 'Time Zone'
     tsv(report_folder, data_headers, data_list, tsvname)
+
     return artifact_success
+    
         

@@ -64,10 +64,12 @@ def crunch_artifacts(extracttype, input_path, out_params):
     
     categories_searched = 0
     # Search for the files per the arguments
+
+    macos_version = get_macos_version(input_path)
+    logfunc(f'macOS version detected: {macos_version}\n')
+
     for key, val in tosearch.items():
         artifact_pretty_name = val
-        macos_version = get_macos_version(input_path)
-        logfunc(f'macOS version detected: {macos_version}\n')
         artifact_success = process_artifact(macos_version, key, artifact_pretty_name, out_params.report_folder_base, input_path)
 
         if artifact_success == 0:

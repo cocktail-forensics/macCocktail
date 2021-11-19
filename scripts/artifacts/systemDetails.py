@@ -149,4 +149,6 @@ def get_systemDetails(macos_version, report_folder, input_path):
 # write TSV report items    
     tsvname = 'Mac OS Details'
     tsv(report_folder, data_headers, data_list, tsvname)
+
     return artifact_success
+    

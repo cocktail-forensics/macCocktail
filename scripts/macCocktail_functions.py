@@ -12,6 +12,7 @@ import nska_deserialize as nd
 from mac_alias import Bookmark
 from bs4 import BeautifulSoup
 from pathlib import Path
+from PIL import Image
 
 #screen_output_file_path_devinfo = os.path.join(reportfolderbase, 'Script Logs', 'DeviceInfo.html')
 class OutputParameters:
@@ -124,6 +125,15 @@ def tsv(report_folder, data_headers, data_list, tsvname):
         tsv_writer.writerow(data_headers)
         for i in data_list:
             tsv_writer.writerow(i)
+
+def convertTIF(tif_photopath):
+    outfile = os.path.splitext(os.path.join(tif_photopath))[0] + ".png"
+
+    im = Image.open(os.path.join(tif_photopath))
+    im.thumbnail(im.size)
+    im.save(outfile, "PNG", quality=100)
+
+    return outfile
 
 def getModel(model_id):
     full_model = "Unresolved"
