@@ -9,7 +9,7 @@ from scripts.artifacts.systemDetails import get_systemDetails
 from scripts.artifacts.timeZone import get_timeZone
 from scripts.artifacts.userAccounts import get_userAccounts
 from scripts.artifacts.userAccountsDeleted import get_userAccountsDeleted
-# from scripts.artifacts.networkInterfaces import get_networkInterfaces
+from scripts.artifacts.networkInterfaces import get_networkInterfaces
 # from scripts.artifacts.networkHistory import get_networkHistory
 # from scripts.artifacts.networkConfiguration import get_networkConfiguration
 # from scripts.artifacts.internetAccounts import get_internetAccounts
@@ -54,14 +54,15 @@ from scripts.macCocktail_functions import *
 tosearch = {'systemDetails':('System Overview'),
             'timeZone':('System Overview'),
             'userAccounts':('Accounts'),
-            'userAccountsDeleted':('Accounts')
+            'userAccountsDeleted':('Accounts'),
+            'networkInterfaces':('Network')
             }
 #             'internetAccounts':('2 - Accounts', ['/Library/Preferences/SystemConfiguration/com.apple.accounts.exists.plist']),
 #             'internetAccountsConfiguration':('2 - Accounts', ['/Users/','/Library/Accounts/Accounts4.sqlite']),
 #             'iDeviceConnections':('Connections', ['/Users/','/Library/Preferences/com.apple.iPod.plist']),
 #             'iDeviceBackups':('Connections', ['NA']),
 #             'iDevicelockdownFiles':('Connections', ['/private/var/db/lockdown/']),
-#             'networkInterfaces':('Network', ['/Library/Preferences/SystemConfiguration/NetworkInterfaces.plist']),
+
 #             'networkHistory':('Network', ['/Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist']),
 #             'networkConfiguration':('Network', ['/Library/Preferences/SystemConfiguration/preferences.plist', \
 #                 '/private/var/db/dhcpclient/leases']),
