@@ -7,7 +7,7 @@ from scripts.macCocktail_functions import logdevinfo, tsv
 
 def get_networkConfiguration(macos_version, report_folder, input_path):
 
-# define artifact location
+# define artifact locations
     configuration_path = input_path + "/Library/Preferences/SystemConfiguration/preferences.plist"
     dhcp_path = input_path + "/private/var/db/dhcpclient/leases"
 
@@ -95,6 +95,6 @@ def get_networkConfiguration(macos_version, report_folder, input_path):
 # write TSV report items     
     tsvname = 'Network Configuration'
     tsv(report_folder, data_headers, data_list, tsvname)
-    
+
     return artifact_success
             
