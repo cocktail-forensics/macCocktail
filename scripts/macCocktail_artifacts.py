@@ -10,8 +10,8 @@ from scripts.artifacts.timeZone import get_timeZone
 from scripts.artifacts.userAccounts import get_userAccounts
 from scripts.artifacts.userAccountsDeleted import get_userAccountsDeleted
 from scripts.artifacts.networkInterfaces import get_networkInterfaces
+from scripts.artifacts.networkConfiguration import get_networkConfiguration
 # from scripts.artifacts.networkHistory import get_networkHistory
-# from scripts.artifacts.networkConfiguration import get_networkConfiguration
 # from scripts.artifacts.internetAccounts import get_internetAccounts
 # from scripts.artifacts.internetAccountsConfiguration import get_internetAccountsConfiguration
 # from scripts.artifacts.iDeviceConnections import get_iDeviceConnections
@@ -55,7 +55,8 @@ tosearch = {'systemDetails':('System Overview'),
             'timeZone':('System Overview'),
             'userAccounts':('Accounts'),
             'userAccountsDeleted':('Accounts'),
-            'networkInterfaces':('Network')
+            'networkInterfaces':('Network'),
+            'networkConfiguration':('Network')
             }
 #             'internetAccounts':('2 - Accounts', ['/Library/Preferences/SystemConfiguration/com.apple.accounts.exists.plist']),
 #             'internetAccountsConfiguration':('2 - Accounts', ['/Users/','/Library/Accounts/Accounts4.sqlite']),
@@ -64,8 +65,7 @@ tosearch = {'systemDetails':('System Overview'),
 #             'iDevicelockdownFiles':('Connections', ['/private/var/db/lockdown/']),
 
 #             'networkHistory':('Network', ['/Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist']),
-#             'networkConfiguration':('Network', ['/Library/Preferences/SystemConfiguration/preferences.plist', \
-#                 '/private/var/db/dhcpclient/leases']),
+
 #             'officeExcelMRUs':('Recent Activity', ['/Users/','/Library/Containers/com.microsoft.Excel/Data/Library/Preferences/com.microsoft.Excel.securebookmarks.plist']),
 #             'officeWordMRUs':('Recent Activity', ['/Users/','/Library/Containers/com.microsoft.Word/Data/Library/Preferences/com.microsoft.Word.securebookmarks.plist']),
 #             'officePowerPointMRUs':('Recent Activity', ['/Users/','/Library/Containers/com.microsoft.Powerpoint/Data/Library/Preferences/com.microsoft.Powerpoint.securebookmarks.plist']),
