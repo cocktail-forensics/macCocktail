@@ -12,8 +12,7 @@ from scripts.artifacts.userAccountsDeleted import get_userAccountsDeleted
 from scripts.artifacts.networkInterfaces import get_networkInterfaces
 from scripts.artifacts.networkConfiguration import get_networkConfiguration
 from scripts.artifacts.networkHistory import get_networkHistory
-# from scripts.artifacts.internetAccounts import get_internetAccounts
-# from scripts.artifacts.internetAccountsConfiguration import get_internetAccountsConfiguration
+from scripts.artifacts.internetAccounts import get_internetAccounts
 # from scripts.artifacts.iDeviceConnections import get_iDeviceConnections
 # from scripts.artifacts.iDevicelockdownFiles import get_iDevicelockdownFiles
 # from scripts.artifacts.iDeviceBackups import get_iDeviceBackups
@@ -55,12 +54,12 @@ tosearch = {'systemDetails':('System Overview'),
             'timeZone':('System Overview'),
             'userAccounts':('Accounts'),
             'userAccountsDeleted':('Accounts'),
+            'internetAccounts':('Accounts'),
             'networkInterfaces':('Network'),
             'networkConfiguration':('Network'),
             'networkHistory':('Network')
             }
-#             'internetAccounts':('2 - Accounts', ['/Library/Preferences/SystemConfiguration/com.apple.accounts.exists.plist']),
-#             'internetAccountsConfiguration':('2 - Accounts', ['/Users/','/Library/Accounts/Accounts4.sqlite']),
+
 #             'iDeviceConnections':('Connections', ['/Users/','/Library/Preferences/com.apple.iPod.plist']),
 #             'iDeviceBackups':('Connections', ['NA']),
 #             'iDevicelockdownFiles':('Connections', ['/private/var/db/lockdown/']),
