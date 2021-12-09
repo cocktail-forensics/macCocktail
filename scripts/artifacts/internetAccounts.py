@@ -30,7 +30,7 @@ def get_internetAccounts(macos_version, report_folder, input_path):
 # define container for results  
     data_list = []
 
-# get internet account details for eack account
+# get internet account details for each account
     for k in config_list:
         if os.path.exists(k):
             split_filedir = k.split("/")
