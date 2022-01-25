@@ -15,7 +15,7 @@ from scripts.artifacts.networkHistory import get_networkHistory
 from scripts.artifacts.internetAccounts import get_internetAccounts
 from scripts.artifacts.iDeviceLockdownFiles import get_iDeviceLockdownFiles
 from scripts.artifacts.iDeviceConnections import get_iDeviceConnections
-# from scripts.artifacts.iDeviceBackups import get_iDeviceBackups
+from scripts.artifacts.iDeviceBackups import get_iDeviceBackups
 # from scripts.artifacts.officeExcelMRUs import get_officeExcelMRUs
 # from scripts.artifacts.officeWordMRUs import get_officeWordMRUs
 # from scripts.artifacts.officePowerPointMRUs import get_officePowerPointMRUs
@@ -59,11 +59,11 @@ tosearch = {'systemDetails':('System Overview'),
             'networkConfiguration':('Network'),
             'networkHistory':('Network'),
             'iDeviceLockdownFiles':('Connections'),
-            'iDeviceConnections':('Connections')
+            'iDeviceConnections':('Connections'),
+            'iDeviceBackups':('Connections')
             }
 
 #             'iDeviceConnections':('Connections', ['/Users/','/Library/Preferences/com.apple.iPod.plist']),
-#             'iDeviceBackups':('Connections', ['NA']),
 #             'iDevicelockdownFiles':('Connections', ['/private/var/db/lockdown/']),
 #             'officeExcelMRUs':('Recent Activity', ['/Users/','/Library/Containers/com.microsoft.Excel/Data/Library/Preferences/com.microsoft.Excel.securebookmarks.plist']),
 #             'officeWordMRUs':('Recent Activity', ['/Users/','/Library/Containers/com.microsoft.Word/Data/Library/Preferences/com.microsoft.Word.securebookmarks.plist']),
