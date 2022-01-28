@@ -17,11 +17,11 @@ from scripts.artifacts.iDeviceLockdownFiles import get_iDeviceLockdownFiles
 from scripts.artifacts.iDeviceConnections import get_iDeviceConnections
 from scripts.artifacts.iDeviceBackups import get_iDeviceBackups
 from scripts.artifacts.downloadAttributes import get_downloadAttributes
+from scripts.artifacts.recentDocuments import get_recentDocuments
+from scripts.artifacts.recentFolders import get_recentFolders
 # from scripts.artifacts.officeExcelMRUs import get_officeExcelMRUs
 # from scripts.artifacts.officeWordMRUs import get_officeWordMRUs
 # from scripts.artifacts.officePowerPointMRUs import get_officePowerPointMRUs
-# from scripts.artifacts.recentFolders import get_recentFolders
-# from scripts.artifacts.recentDocuments import get_recentDocuments
 # from scripts.artifacts.downloadAttributes import get_downloadAttributes
 # from scripts.artifacts.spotlightSearches import get_spotlightSearches
 # from scripts.artifacts.spotlightApplicationUsage import get_spotlightApplicationUsage
@@ -62,7 +62,9 @@ tosearch = {'systemDetails':('System Overview'),
             'iDeviceLockdownFiles':('Connections'),
             'iDeviceConnections':('Connections'),
             'iDeviceBackups':('Connections'),
-            'downloadAttributes':('Downloads')
+            'downloadAttributes':('Downloads'),
+            'recentDocuments':('Recent Activity'),
+            'recentFolders':('Recent Activity')
             }
 
 #             'iDeviceConnections':('Connections', ['/Users/','/Library/Preferences/com.apple.iPod.plist']),
